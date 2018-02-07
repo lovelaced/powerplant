@@ -1,24 +1,24 @@
-$primary-color: white;
-$accent-color: #9FD58E;
-$background-color: #eee;
+$primary-color: #50a813;
+$accent-color: #ff07a4;
+$background-color: #76b852;
 
 #app {
-  background: $background-color;
+  background: #76b852; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+  background: -moz-linear-gradient(right, #76b852, #8DC26F);
+  background: -o-linear-gradient(right, #76b852, #8DC26F);
+  background: linear-gradient(to left, #76b852, #8DC26F);
+  font-family: "Work Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   position: absolute;
   top: 0;
   bottom: 0;
+	justify-content: center;
   width: 100%;
   overflow: overlay;
 
   .panel-custom {
-    .panel-heading {
-      background: $primary-color;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-			padding-bottom: 0px;
-			padding-top: 15px;
-    }
-    border-radius: 10px;
   }
 
   .btn-floating {
@@ -26,7 +26,7 @@ $background-color: #eee;
     align-items: center;
     justify-content: center;
     background: $accent-color;
-    color: white;
+    color: #50a813;
     position: fixed;
     border-radius: 50%;
     width: 10vmax;
@@ -40,15 +40,19 @@ $background-color: #eee;
     -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
   }
+
+	.navbar {
+		height: 75px !important;
+		padding-bottom: 40px;
+		box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	}
   .navbar-brand {
-    background: url(/images/logo/logo_128.png) right no-repeat;
-		right: 41%;
-		color: #2F9B12;
-		font-weight: 700;
+    background: url(/images/logo/newnewlogo.png) right no-repeat;
+		background-size: 354px 64px;
+		right: 21%;
+		color: transparent;
 		position: absolute;
-		background-size: 46px 46px;
-		//padding-right: 50px;
-		padding: 25px 44px !important;
+		padding: 35px 144px !important;
 		//if it's small
 		// font: 0/0 a;
 		// color: transparent;
@@ -58,17 +62,19 @@ $background-color: #eee;
 		// right:0%
   }
   .navbar-toggle.collapsed>.navbar-brand {
-
+      background-color: #FFFFFF;
   }
+	.navbar-left {
+		padding-top: 10px;
+		font-size: 16pt;
+	}
   .navbar-right {
     .log>a {
         padding-right : 45px;
         background-repeat: no-repeat;
         background-position: right center;
-        background-size: 45px;
-        content: "";
-        display: inline-block;
-        vertical-align: right;
+        background-size: 100px;
+        vertical-align: center;
     }
     .log.in>a{
       background-image: url(/images/logo/logo_128.png);
@@ -78,18 +84,25 @@ $background-color: #eee;
     }
   }
 	.choose-crops{
-		padding-bottom: 40px;
+		padding-top: 30px;
+		padding-bottom: 30px;
 	}
 	.row {
-		padding-bottom: 15px;
+		color: #969faa;
+		z-index: 1;
+		padding-left: 15px;
+		max-width: 840px;
+		justify-content: center;
+		text-align: center;
 	}
 	.btn-default.active{
-		background-color: green;
+		background-color: $primary-color;
 
 	}
 	.button-checkbox-center {
 		display: flex;
 		flex-direction: row;
+		margin: 60px 40% auto;
 		.rbt {
 			width: 100%;
 		}
@@ -98,18 +111,38 @@ $background-color: #eee;
 	.button-checkbox-center > [class*=" col-"] {
 		display: flex;
 		align-items: center;
-		justify-content: left;
+		justify-content: center;
+
 	}
 	.btn-group >.btn{
+		margin: 0 auto;
 		padding: 13px 13px;
 	}
-	.yourBeds{
+	.yourBeds {
+		z-index: 1;
+		font-size: 20pt;
+		background: #FFFFFF;
+		padding-bottom: 60px;
+		padding-top: 20px;
+		max-width: 860px;
+		margin: 40 auto 20px;
+		justify-content: center;
 		text-align: center;
+		border-radius: 25px;
+		box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	}
+	.yourBeds h1 {
+		font-size: 44pt;
+		padding-top: 60px;
+		padding-left: 0px;
+		padding-bottom: 60px;
+		color: #48505a;
 	}
 	.yourBeds li{
 		list-style-type: none;
 		text-align: center;
 	}
+
 	.panel-crudablelist{
 		height: 182px;
 	}
@@ -128,6 +161,6 @@ $background-color: #eee;
 		}
 	}
 	.pp-font {
-		color: #2F9B12;
+		color: #50a813;
 	}
 }

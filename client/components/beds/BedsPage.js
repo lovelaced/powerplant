@@ -20,8 +20,7 @@ const BedsPage = function({  beds, match, location, actions, locationId }) {
   }
 	return (
 		<div className="yourBeds">
-			<h3>Your Beds</h3>
-			<Grid>
+			<h1>Your Beds</h1>
 				<CrudableList
 					actions={actionsWithLocationId}
 					items={beds}
@@ -31,7 +30,6 @@ const BedsPage = function({  beds, match, location, actions, locationId }) {
 					DetailPage={BedPage}
 					match={match}
 				/>
-			</Grid>
 		</div>
 	);
 };

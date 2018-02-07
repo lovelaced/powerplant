@@ -1,11 +1,24 @@
 //AboutPage.scss
-.about{
+
+.about {
+         	z-index: 1;
+		font-size: 20pt;
+		background: #FFFFFF;
+		padding-bottom: 140px;
+		padding-top: 20px;
+		max-width: 860px;
+		margin: 40 auto 20px;
+		justify-content: center;
+		text-align: center;
+		border-radius: 25px;
+		box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
 	#imageTitle{
-		background-image: url(/images/logo/logo_128.png);
-		padding: 60px;
+		background-image: url(/images/logo/power.svg);
+		padding: 128px;
 		background-repeat: no-repeat;
 
-		background-size: 118px;
+		background-size: 128px;
 		@media (max-width: 992px) {
 			background-position: center;
 		}
@@ -16,7 +29,7 @@
 	.textTitle{
 		size: 17px;
 		text-align: center;
-		//padding-left: -15px;
+		padding-bottom: 30px;
 		@media (max-width: 992px) {
 			text-align: center;
 		}
@@ -27,4 +40,22 @@
 	.textBody{
 		text-align: center;
 	}
+}
+
+a {
+  color: #50a813;
+  /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+}
+a:hover { 
+  color: #255a27; 
+  text-decoration: none;
 }

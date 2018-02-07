@@ -120,8 +120,8 @@ class AddBedForm extends React.Component {
 AddBedForm.defaultProps = {
 	minNumberOfCrops : 3,
 	submitButtonText : "Submit",
-	minNumberOfCropsText : "Please select at least 3 crops.",
-	explanation : "Please choose the crops you want to add in your garden. We will suggest you which plants should go together into the same bed."
+	minNumberOfCropsText : "(select at least 3 crops!)",
+	explanation : "Choose which crops you'd like to plant in your garden, and we'll suggest a bed plan based on plant compatibility."
 }
 
 export default withRouter(AddBedForm);
