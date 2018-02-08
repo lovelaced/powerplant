@@ -30,7 +30,7 @@ class ChooseCrops extends React.Component {
 				multiple
 				options={this.props.crops.all}
 				labelKey='commonName'
-				placeholder='Choose a crop ...'
+				placeholder='choose a crop ...'
 				onChange={this.props.onChange}
 				isLoading={this.props.loading}
 			/>

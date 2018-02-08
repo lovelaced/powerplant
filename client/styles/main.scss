@@ -87,6 +87,14 @@ $background-color: #76b852;
 		padding-top: 30px;
 		padding-bottom: 30px;
 	}
+	.form-control {
+                padding: 15px;
+                box-sizing: border-box;
+		font-size: 20px;
+		border: 0;
+		outline: 0;
+		background: #f2f2f2;
+	}
 	.row {
 		color: #969faa;
 		z-index: 1;
